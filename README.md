@@ -211,9 +211,9 @@ if you can identify the runtime complexity of different algorithms. It's a super
     - [✔] [[Review] Tree Traversal (playlist) in 11 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZO1JC2RgEi04nLy6D-rKk6b)
 
 - ### Binary search trees: BSTs
-    - [ ] [Binary Search Tree Review (video)](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)    
-    - [ ] [Introduction (video)](https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction)
-    - [ ] [MIT (video)](https://www.youtube.com/watch?v=76dhtgZt38A&ab_channel=MITOpenCourseWare)
+    - [✔] [Binary Search Tree Review (video)](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)    
+    - [✔] [Introduction (video)](https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction)
+    - [✔] [MIT (video)](https://www.youtube.com/watch?v=76dhtgZt38A&ab_channel=MITOpenCourseWare)
     - C/C++:
         - [ ] [Binary search tree - Implementation in C/C++ (video)](https://www.youtube.com/watch?v=COZK7NATh4k&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=28)
         - [ ] [BST implementation - memory allocation in stack and heap (video)](https://www.youtube.com/watch?v=hWokyBoo0aI&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29)
@@ -226,11 +226,11 @@ if you can identify the runtime complexity of different algorithms. It's a super
         - [ ] [Delete a node from Binary Search Tree (video)](https://www.youtube.com/watch?v=gcULXE7ViZw&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36)
         - [ ] [Inorder Successor in a binary search tree (video)](https://www.youtube.com/watch?v=5cPbNCrdotA&index=37&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P)
     - [ ] Implement:
-        - [ ] insert    // insert value into tree
-        - [ ] get_node_count // get count of values stored
+        - [✔] insert    // insert value into tree
+        - [✔] get_node_count // get count of values stored
         - [ ] print_values // prints the values in the tree, from min to max
         - [ ] delete_tree
-        - [ ] is_in_tree // returns true if given value exists in the tree
+        - [✔] is_in_tree // returns true if given value exists in the tree
         - [ ] get_height // returns the height in nodes (single node's height is 1)
         - [ ] get_min   // returns the minimum value stored in the tree
         - [ ] get_max   // returns the maximum value stored in the tree
@@ -271,7 +271,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
 - [ ] Notes:
     - Implement sorts & know best case/worst case, average complexity of each:
         - no bubble sort - it's terrible - O(n^2), except when n <= 16
-    - [ ] Stability in sorting algorithms ("Is Quicksort stable?")
+    - [✔] Stability in sorting algorithms ("Is Quicksort stable?")
         - [Sorting Algorithm Stability](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability)
         - [Stability In Sorting Algorithms](http://stackoverflow.com/questions/1517793/stability-in-sorting-algorithms)
         - [Stability In Sorting Algorithms](http://www.geeksforgeeks.org/stability-in-sorting-algorithms/)
@@ -282,8 +282,8 @@ if you can identify the runtime complexity of different algorithms. It's a super
 
 - For heapsort, see Heap data structure above. Heap sort is great, but not stable
 
-- [ ] [Sedgewick - Mergesort (5 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/3)
-    - [ ] [1. Mergesort](https://www.coursera.org/lecture/algorithms-part1/mergesort-ARWDq)
+- [✔] [Sedgewick - Mergesort (5 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/3)
+    - [✔] [1. Mergesort](https://www.coursera.org/lecture/algorithms-part1/mergesort-ARWDq)
     - [ ] [2. Bottom up Mergesort](https://www.coursera.org/learn/algorithms-part1/lecture/PWNEl/bottom-up-mergesort)
     - [ ] [3. Sorting Complexity](https://www.coursera.org/lecture/algorithms-part1/sorting-complexity-xAltF)
     - [ ] [4. Comparators](https://www.coursera.org/lecture/algorithms-part1/comparators-9FYhS)
@@ -310,9 +310,9 @@ if you can identify the runtime complexity of different algorithms. It's a super
 - [ ] [Quicksort (video)](https://www.youtube.com/watch?v=y_G9BkAm6B8&index=4&list=PL89B61F78B552C1AB)
 - [ ] [Selection Sort (video)](https://www.youtube.com/watch?v=6nDMgr0-Yyo&index=8&list=PL89B61F78B552C1AB)
 
-- [ ] Merge sort code:
+- [✔] Merge sort code:
     - [ ] [Using output array (C)](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/sorting/mergesort.c)
-    - [ ] [Using output array (Python)](https://github.com/jwasham/practice-python/blob/master/merge_sort/merge_sort.py)
+    - [✔] [Using output array (Python)](https://github.com/jwasham/practice-python/blob/master/merge_sort/merge_sort.py)
     - [ ] [In-place (C++)](https://github.com/jwasham/practice-cpp/blob/master/merge_sort/merge_sort.cc)
 - [ ] Quick sort code:
     - [ ] [Implementation (C)](http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c)
