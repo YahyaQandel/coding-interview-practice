@@ -93,3 +93,36 @@ class BSTree:
             return False
         
         return traverse(self.root)
+
+    def _get_lowest_node_value_of_branch(self,node):
+        if node.left:
+            return self._get_lowest_node_value_of_branch(node.left)
+        return node.value
+
+    def delete(self,value):
+        def _delete(node,value):
+            if node:
+                if node.value == value and node.left and node.right:
+                    node.value = self._get_lowest_node_value_of_branch(node.right)
+                    node.right = _delete(node.right,node.value)  # perform leaf delete
+                if node.value == value and node.left == None and node.right == None: # delete a leaf
+                    return None 
+                if node.value == value and node.left is not None:  # one child left
+                    return node.left
+                if node.value == value and node.right is not None: # one child right
+                    return node.right
+                node.left = _delete(node.left,value)
+                node.right = _delete(node.right,value)
+                return node
+        self.root = _delete(self.root,value)
+
+
+    
+    def get_height(self):
+        def _height(node):
+            if node:
+                lheight = _height(node.left) + 1
+                rheight = _height(node.right) + 1
+                return max(lheight,rheight)
+            return 0
+        return _height(self.root)

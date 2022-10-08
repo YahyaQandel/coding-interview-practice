@@ -50,3 +50,72 @@ class BinarySearchTest(TestCase):
         self.bstree.insert(25)
         self.assertTrue(self.bstree.is_in_tree(30))
         self.assertFalse(self.bstree.is_in_tree(33))
+
+    def test_item_is_in_tree_root(self):
+        self.bstree.insert(10)
+        self.assertTrue(self.bstree.is_in_tree(10))
+        self.assertFalse(self.bstree.is_in_tree(33))
+
+    
+    def test_delete_leaf_node(self):
+        self.bstree.insert(10)
+        self.bstree.insert(2)
+        self.bstree.insert(4)
+        self.bstree.delete(4)
+        self.assertFalse(self.bstree.is_in_tree(4))
+        self.assertEqual(self.bstree.root.left.value,2)
+
+
+    def test_delete_one_child_node_left(self):
+        self.bstree.insert(10)
+        self.bstree.insert(2)
+        self.bstree.insert(4)
+        self.bstree.delete(2)
+        self.assertFalse(self.bstree.is_in_tree(2))
+        self.assertEqual(self.bstree.root.left.value,4)
+    
+    def test_delete_one_child_node_right(self):
+        self.bstree.insert(10)
+        self.bstree.insert(15)
+        self.bstree.insert(18)
+        self.bstree.delete(15)
+        self.assertFalse(self.bstree.is_in_tree(15))
+        self.assertEqual(self.bstree.root.right.value,18)
+
+
+    def test_delete_two_children_node(self):
+        self.bstree.insert(5)
+        self.bstree.insert(20)
+        self.bstree.insert(10)
+        self.bstree.insert(30)
+        self.bstree.insert(25)
+        self.bstree.insert(35)
+        self.bstree.insert(22)
+        self.bstree.delete(20)
+        self.assertFalse(self.bstree.is_in_tree(20))
+        self.assertEqual(self.bstree.root.right.value,22)
+        self.assertEqual(self.bstree.root.right.value,22)
+        self.assertEqual(self.bstree.root.right.right.value,30)
+        self.assertEqual(self.bstree.root.right.right.left.value,25)
+        self.assertEqual(self.bstree.root.right.right.right.value,35)
+        self.bstree.delete(22)
+        self.assertFalse(self.bstree.is_in_tree(22))
+        self.assertEqual(self.bstree.root.right.value,25)
+        self.assertEqual(self.bstree.root.right.right.value,30)
+        self.assertIsNone(self.bstree.root.right.right.left)
+        self.assertIsNone(self.bstree.root.right.right.right.left)
+        self.bstree.delete(25)
+        self.assertEqual(self.bstree.nodes_count(),4)
+        self.assertEqual(self.bstree.root.right.value,30)
+        self.assertEqual(self.bstree.root.right.left.value,10)
+        self.assertEqual(self.bstree.root.right.right.value,35)
+
+
+    
+    def test_get_height(self):
+        self.bstree.insert(10)
+        self.assertEqual(self.bstree.get_height(),1)
+        self.bstree.insert(5)
+        self.bstree.insert(4)
+        self.bstree.insert(2)
+        self.assertEqual(self.bstree.get_height(),4)
