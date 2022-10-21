@@ -253,3 +253,29 @@ class BinarySearchTest(TestCase):
         self.assertEqual(self.bstree.print_values(),[3,5,7,10,13,15,20])
         self.bstree.insert(-1)
         self.assertEqual(self.bstree.print_values(),[-1,3,5,7,10,13,15,20])
+
+
+    def test_if_binary_search_tree(self):
+        self.bstree.insert(10)
+        self.bstree.insert(5)
+        self.bstree.insert(15)
+        self.bstree.insert(3)
+        self.bstree.insert(7)
+        self.bstree.insert(13)
+        self.bstree.insert(20)
+        self.assertTrue(self.bstree.is_bst())
+
+    def test_if_binary_search_tree(self):
+        self.bstree.insert(10)
+        self.bstree.insert(5)
+        self.bstree.insert(15)
+        self.bstree.insert(3)
+        self.bstree.insert(7)
+        self.bstree.insert(13)
+        self.bstree.insert(20)
+        self.bstree.root.right.right.value = 2
+        self.assertFalse(self.bstree.is_bst())
+
+    def test_if_binary_search_tree_has_only_one_node(self):
+        self.bstree.insert(10)
+        self.assertTrue(self.bstree.is_bst())

@@ -224,3 +224,16 @@ class BSTree:
         sorted_tree_as_list = []
         inorder(self.root,sorted_tree_as_list)
         return sorted_tree_as_list
+
+
+    def is_bst(self):
+        def _is_bst(node):
+            if not node:
+                return  True
+            if node.left and node.left.value > node.value:
+                return False
+            if node.right and node.right.value < node.value:
+                return False
+            return _is_bst(node.left) and _is_bst(node.right)
+            
+        return _is_bst(self.root)

@@ -234,7 +234,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
         - [✔] get_height // returns the height in nodes (single node's height is 1)
         - [✔] get_min   // returns the minimum value stored in the tree
         - [✔] get_max   // returns the maximum value stored in the tree
-        - [ ] is_binary_search_tree
+        - [✔] is_binary_search_tree
         - [✔] delete_value
             - [✔] leaf node
             - [✔] one child node
