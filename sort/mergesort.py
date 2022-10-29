@@ -26,3 +26,4 @@ class MergeSort():
                 j+=1
                 k+=1
             return arr
+        return arr
