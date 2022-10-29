@@ -10,3 +10,9 @@ class TestMergeSort(unittest.TestCase):
         sorted_test_arr = [1,2,3,4,5,6,7]
         result = self.algo.sort(test_arr)
         self.assertEqual(result, sorted_test_arr)
+
+    def test_sort_basic_scenadrio(self):
+        test_arr = [1,2,3,3,2,1,2]
+        sorted_test_arr = [1,1,2,2,2,3,3]
+        result = self.algo.sort(test_arr)
+        self.assertEqual(result, sorted_test_arr)
