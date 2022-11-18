@@ -1,9 +1,10 @@
 import unittest
-from mergesort import MergeSort
+from mergesort import MergeSort,TrainMergeSort
 
 class TestMergeSort(unittest.TestCase):
     def setUp(self) -> None:
-        self.algo = MergeSort()
+        # self.algo = MergeSort()
+        self.algo = TrainMergeSort()
 
     def test_sort_basic_scenario(self):
         test_arr = [2,6,5,1,7,4,3]

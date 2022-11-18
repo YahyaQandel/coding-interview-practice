@@ -293,8 +293,8 @@ if you can identify the runtime complexity of different algorithms. It's a super
     - [ ] [4. Comparators](https://www.coursera.org/lecture/algorithms-part1/comparators-9FYhS)
     - [ ] [5. Stability](https://www.coursera.org/learn/algorithms-part1/lecture/pvvLZ/stability)
 
-- [ ] [Sedgewick - Quicksort (4 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/3)
-    - [ ] [1. Quicksort](https://www.coursera.org/lecture/algorithms-part1/quicksort-vjvnC)
+- [✔] [Sedgewick - Quicksort (4 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/3)
+    - [✔] [1. Quicksort](https://www.coursera.org/lecture/algorithms-part1/quicksort-vjvnC)
     - [ ] [2. Selection](https://www.coursera.org/lecture/algorithms-part1/selection-UQxFT)
     - [ ] [3. Duplicate Keys](https://www.coursera.org/lecture/algorithms-part1/duplicate-keys-XvjPd)
     - [ ] [4. System Sorts](https://www.coursera.org/lecture/algorithms-part1/system-sorts-QBNZ7)
@@ -324,7 +324,7 @@ if you can identify the runtime complexity of different algorithms. It's a super
     - [✔] [Implementation (Python)](https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py)
 
 - [ ] [[Review] Sorting (playlist) in 18 minutes](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl)
-    - [ ] [Quick sort in 4 minutes (video)](https://youtu.be/Hoixgm4-P4M)
+    - [✔] [Quick sort in 4 minutes (video)](https://youtu.be/Hoixgm4-P4M)
     - [ ] [Heap sort in 4 minutes (video)](https://youtu.be/2DmK_H7IdTo)
     - [ ] [Merge sort in 3 minutes (video)](https://youtu.be/4VqmGXwpLqc)
     - [ ] [Bubble sort in 2 minutes (video)](https://youtu.be/xli_FI7CuzA)
