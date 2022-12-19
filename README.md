@@ -332,8 +332,10 @@ if you can identify the runtime complexity of different algorithms. It's a super
     - [ ] [Insertion sort in 2 minutes (video)](https://youtu.be/JU767SDMDvA)
 
 - [ ] Implement:
-    - [ ] Mergesort: O(n log n) average and worst case
-    - [ ] Quicksort O(n log n) average case
+    - [✔] Mergesort: O(n log n) average and worst case
+    - [✔] Quicksort O(n log n) average case
+    - [✔] Insertionsort O(n2) average case
+    - [✔] Bubblesort O(n2) average case
     - Selection sort and insertion sort are both O(n^2) average and worst case
     - For heapsort, see Heap data structure above
 
