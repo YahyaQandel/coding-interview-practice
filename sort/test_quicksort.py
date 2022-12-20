@@ -1,10 +1,10 @@
 import unittest
-from quicksort import QuickSort,TrainQuickSort
+from quicksort import QuickSort
 
 class TestQuickSort(unittest.TestCase):
     def setUp(self) -> None:
         # self.algo = QuickSort()
-        self.algo = TrainQuickSort()
+        self.algo = QuickSort()
 
     def test_sort_basic_scenario(self):
         test_arr = [2,6,5,1,7,4,3]
